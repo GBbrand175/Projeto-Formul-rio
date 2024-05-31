@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário cadastral </title>
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 5px;
+            margin: 3px;
+        }
+        input{
+            border-radius: 20px;
+            border: solid 0px black;
+            box-shadow: 0px 3px 7px black;
+        }
+
+        button{
+            border: solid 0px black ;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px black;
+            color: white;
+            background-color: rgb(88, 135, 236);
+        }
+    </style>
+</head>
+<body>
+    <form action="\formulario_dados_cadastrais" method="post"> 
+        <fieldset>
+            <legend> <strong>DADOS CADASTRAIS</strong></legend>   
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" minlength="3">
+            <label for="data de nascimento">Data de nascimento:</label>
+            <input type="text" id="data-nascimento">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" maxlength="11" minlength="11">
+        </fieldset>
+
+        <fieldset>
+            <legend> <strong>Endereço</strong></legend>
+            <label for="tipo_endereco">tipo:</label>
+            <select name="" id="tipo_endereco">
+                <option value="">Selecione</option>
+                <option value="">Rua</option>
+                <option value="">Estrada</option>
+                <option value="">Rodovia</option>
+                <option value="">Outros</option>
+            </select>
+
+            <label for="logradouro_end">Logradouro:</label>
+            <input type="text" id="logradouro_end">
+
+            <label for="logradouro_num">Nº:</label>
+            <input type="text" id="logradouro_num">
+
+            <label for="logradouro_comple">Complemento:</label>
+            <input type="text" id="logradouro_comple">
+
+            <fieldset>
+                <legend> <strong>Fale conosco</strong></legend>
+                <label for="msg">Mensagem</label>
+                <textarea name="" id="" cols="30" rows="10" maxlength="100">
+
+                </textarea>
+            </fieldset>
+
+            <fieldset>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar formulário</button>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>
